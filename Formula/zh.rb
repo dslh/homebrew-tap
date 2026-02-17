@@ -5,21 +5,21 @@
 class Zh < Formula
   desc "CLI for ZenHub"
   homepage "https://github.com/dslh/zh"
-  version "1.0.4"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dslh/zh/releases/download/v1.0.4/zh_1.0.4_darwin_amd64.tar.gz"
-      sha256 "2d241bd08d82a645c32956eb71d584ac2404aff74545e4a43e0e66d72c5f625c"
+      url "https://github.com/dslh/zh/releases/download/v1.0.5/zh_1.0.5_darwin_amd64.tar.gz"
+      sha256 "8937dd346d814ad51adab9ecb6e32a4df4f0a04a8ecb366fb7600aba8d516917"
 
       def install
         bin.install "zh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dslh/zh/releases/download/v1.0.4/zh_1.0.4_darwin_arm64.tar.gz"
-      sha256 "373b53c4a9211537ec37261a3ac37a6644b539d6b45ecd7ed9acd36102577c2e"
+      url "https://github.com/dslh/zh/releases/download/v1.0.5/zh_1.0.5_darwin_arm64.tar.gz"
+      sha256 "b225987112e0080175dc8500705a9e37e5defa628bfa61ffd327fece5f694c02"
 
       def install
         bin.install "zh"
@@ -29,15 +29,15 @@ class Zh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/zh/releases/download/v1.0.4/zh_1.0.4_linux_amd64.tar.gz"
-      sha256 "f0459de65e194dda59c26385a8df64b547052015b3ef2bff2571bd342fb7a5ed"
+      url "https://github.com/dslh/zh/releases/download/v1.0.5/zh_1.0.5_linux_amd64.tar.gz"
+      sha256 "d629164392458eabb4616e78fa551997bbf8d57ad4358486b5da5c6307a8a415"
       def install
         bin.install "zh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/zh/releases/download/v1.0.4/zh_1.0.4_linux_arm64.tar.gz"
-      sha256 "f1b4315dff37b996d88eadb77de52d276fd5c2c7b8a170d21f94c4075eca864e"
+      url "https://github.com/dslh/zh/releases/download/v1.0.5/zh_1.0.5_linux_arm64.tar.gz"
+      sha256 "29bac962f368409d63e3745b0b7d0289fc86e363a972823f511ee64039b014f7"
       def install
         bin.install "zh"
       end
