@@ -5,23 +5,23 @@
 class Zh < Formula
   desc "CLI for ZenHub"
   homepage "https://github.com/dslh/zh"
-  version "1.0.7"
+  version "1.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dslh/zh/releases/download/v1.0.7/zh_1.0.7_darwin_amd64.tar.gz"
-      sha256 "c3509d3c6828437941d66243ef8d82490cb5eaf52d9ef3f83ffb1e084e3c89eb"
+      url "https://github.com/dslh/zh/releases/download/v1.0.8/zh_1.0.8_darwin_amd64.tar.gz"
+      sha256 "90e63a990a0c03dac226eaffbf6c4b07e41acce8d5b1d290ca57839471774067"
 
-      def install
+      define_method(:install) do
         bin.install "zh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dslh/zh/releases/download/v1.0.7/zh_1.0.7_darwin_arm64.tar.gz"
-      sha256 "f9cc107407dd8197d182b6e38130920716c67f4a41f1f7e1d2c422864add3029"
+      url "https://github.com/dslh/zh/releases/download/v1.0.8/zh_1.0.8_darwin_arm64.tar.gz"
+      sha256 "55415ae7da0541ef1307fd60a5d06068ad2336eaa79e16a6c3135d20b9033f43"
 
-      def install
+      define_method(:install) do
         bin.install "zh"
       end
     end
@@ -29,16 +29,16 @@ class Zh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/zh/releases/download/v1.0.7/zh_1.0.7_linux_amd64.tar.gz"
-      sha256 "bbd1ab7640a489c352b183b07ec7b75c4bcda44cbb033bee15d13e7edf31cee4"
-      def install
+      url "https://github.com/dslh/zh/releases/download/v1.0.8/zh_1.0.8_linux_amd64.tar.gz"
+      sha256 "7538d12ec8a1c3bc7ddb07c34856ab041ff341cd7f818089ed90a362df47db9e"
+      define_method(:install) do
         bin.install "zh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/zh/releases/download/v1.0.7/zh_1.0.7_linux_arm64.tar.gz"
-      sha256 "09b85ec720086f07247c0e2f86b762d5bf122fbcf95807aa298483e7c28625be"
-      def install
+      url "https://github.com/dslh/zh/releases/download/v1.0.8/zh_1.0.8_linux_arm64.tar.gz"
+      sha256 "61087462f1c89286be1a94c30cfbd06bbae927193c0d1a5c9c1b41359f878f65"
+      define_method(:install) do
         bin.install "zh"
       end
     end
