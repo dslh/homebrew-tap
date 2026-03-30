@@ -5,21 +5,21 @@
 class Zh < Formula
   desc "CLI for ZenHub"
   homepage "https://github.com/dslh/zh"
-  version "1.0.8"
+  version "1.0.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dslh/zh/releases/download/v1.0.8/zh_1.0.8_darwin_amd64.tar.gz"
-      sha256 "90e63a990a0c03dac226eaffbf6c4b07e41acce8d5b1d290ca57839471774067"
+      url "https://github.com/dslh/zh/releases/download/v1.0.9/zh_1.0.9_darwin_amd64.tar.gz"
+      sha256 "b037d58640b78b15601d6da9ee625187bb96f57125d96889d0aee77f0fee0954"
 
       define_method(:install) do
         bin.install "zh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dslh/zh/releases/download/v1.0.8/zh_1.0.8_darwin_arm64.tar.gz"
-      sha256 "55415ae7da0541ef1307fd60a5d06068ad2336eaa79e16a6c3135d20b9033f43"
+      url "https://github.com/dslh/zh/releases/download/v1.0.9/zh_1.0.9_darwin_arm64.tar.gz"
+      sha256 "044b88420c3d8757a22c030190c03cbd8bf63ba8000937abce315e1a19e7512d"
 
       define_method(:install) do
         bin.install "zh"
@@ -29,15 +29,15 @@ class Zh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/zh/releases/download/v1.0.8/zh_1.0.8_linux_amd64.tar.gz"
-      sha256 "7538d12ec8a1c3bc7ddb07c34856ab041ff341cd7f818089ed90a362df47db9e"
+      url "https://github.com/dslh/zh/releases/download/v1.0.9/zh_1.0.9_linux_amd64.tar.gz"
+      sha256 "3d460f36727e25c4bbaf5cd15b6aec77cbc7df00d065c1e5bfefd18b70c02458"
       define_method(:install) do
         bin.install "zh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/zh/releases/download/v1.0.8/zh_1.0.8_linux_arm64.tar.gz"
-      sha256 "61087462f1c89286be1a94c30cfbd06bbae927193c0d1a5c9c1b41359f878f65"
+      url "https://github.com/dslh/zh/releases/download/v1.0.9/zh_1.0.9_linux_arm64.tar.gz"
+      sha256 "c88b9a632103bc486dbaa2d14ef82a8d73fdf43707dd1bf652c2610510a05413"
       define_method(:install) do
         bin.install "zh"
       end
