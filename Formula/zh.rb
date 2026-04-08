@@ -5,21 +5,21 @@
 class Zh < Formula
   desc "CLI for ZenHub"
   homepage "https://github.com/dslh/zh"
-  version "1.0.9"
+  version "1.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dslh/zh/releases/download/v1.0.9/zh_1.0.9_darwin_amd64.tar.gz"
-      sha256 "b037d58640b78b15601d6da9ee625187bb96f57125d96889d0aee77f0fee0954"
+      url "https://github.com/dslh/zh/releases/download/v1.0.10/zh_1.0.10_darwin_amd64.tar.gz"
+      sha256 "b9605702ebb9906b493aca30dfa0b07c69c59d6ede44029670aa5b2765f50d90"
 
       define_method(:install) do
         bin.install "zh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dslh/zh/releases/download/v1.0.9/zh_1.0.9_darwin_arm64.tar.gz"
-      sha256 "044b88420c3d8757a22c030190c03cbd8bf63ba8000937abce315e1a19e7512d"
+      url "https://github.com/dslh/zh/releases/download/v1.0.10/zh_1.0.10_darwin_arm64.tar.gz"
+      sha256 "4fd4c40c360b8ada6b65bb24e9e674677bb3127d48a834bdb9dab84760e7e477"
 
       define_method(:install) do
         bin.install "zh"
@@ -29,15 +29,15 @@ class Zh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/zh/releases/download/v1.0.9/zh_1.0.9_linux_amd64.tar.gz"
-      sha256 "3d460f36727e25c4bbaf5cd15b6aec77cbc7df00d065c1e5bfefd18b70c02458"
+      url "https://github.com/dslh/zh/releases/download/v1.0.10/zh_1.0.10_linux_amd64.tar.gz"
+      sha256 "7164c037e498fe2de1985a382e807946628b1e52df74eb86747890ac3ed14d20"
       define_method(:install) do
         bin.install "zh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/zh/releases/download/v1.0.9/zh_1.0.9_linux_arm64.tar.gz"
-      sha256 "c88b9a632103bc486dbaa2d14ef82a8d73fdf43707dd1bf652c2610510a05413"
+      url "https://github.com/dslh/zh/releases/download/v1.0.10/zh_1.0.10_linux_arm64.tar.gz"
+      sha256 "39d0c5a1273e5d6a9cfc8d4587ed5c2f279e20df71fdd1e27282dbd728e03e46"
       define_method(:install) do
         bin.install "zh"
       end
