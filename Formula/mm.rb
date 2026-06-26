@@ -5,21 +5,21 @@
 class Mm < Formula
   desc "CLI + MCP server for the mon-marché.fr grocery (cart only)"
   homepage "https://github.com/dslh/mm"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dslh/mm/releases/download/v1.0.0/mm_1.0.0_darwin_amd64.tar.gz"
-      sha256 "c6c2c2f938a6ec6969366238f36726af4adbaa7eb95d3a319133477f6cf9de80"
+      url "https://github.com/dslh/mm/releases/download/v1.0.1/mm_1.0.1_darwin_amd64.tar.gz"
+      sha256 "1b7de34c52eeb8d9568aa4449ce6ca5f5671ea7fd4612345cb0258b3955f261c"
 
       define_method(:install) do
         bin.install "mm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dslh/mm/releases/download/v1.0.0/mm_1.0.0_darwin_arm64.tar.gz"
-      sha256 "dd323d15a60eed5b64877b72807a5fff2f19d0dd0a054ea29d890a42e306147d"
+      url "https://github.com/dslh/mm/releases/download/v1.0.1/mm_1.0.1_darwin_arm64.tar.gz"
+      sha256 "bf2ef3feea67a086670f2104878918206252a86a124f8f81e1c99c80097b0e5b"
 
       define_method(:install) do
         bin.install "mm"
@@ -29,15 +29,15 @@ class Mm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/mm/releases/download/v1.0.0/mm_1.0.0_linux_amd64.tar.gz"
-      sha256 "7a6a2e95fd9b52a6de6bc4f5e1fa4f9d1ec134623e0ab08253c966680c320975"
+      url "https://github.com/dslh/mm/releases/download/v1.0.1/mm_1.0.1_linux_amd64.tar.gz"
+      sha256 "885b840fd2521d552df4156b127efe6c6963c5b2b01ff43377a2170e2d88faef"
       define_method(:install) do
         bin.install "mm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dslh/mm/releases/download/v1.0.0/mm_1.0.0_linux_arm64.tar.gz"
-      sha256 "28e12d569a47487ecae8f9a8cd61986f584ce8b94147f1c17245c087a7ec5c27"
+      url "https://github.com/dslh/mm/releases/download/v1.0.1/mm_1.0.1_linux_arm64.tar.gz"
+      sha256 "cc20c2f27c2544f0bd174ce37c30291754f7a4b8140fc94c493917b8aa777761"
       define_method(:install) do
         bin.install "mm"
       end
